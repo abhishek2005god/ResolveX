@@ -1,0 +1,13 @@
+# Normalize line endings to LF in the repository for all text files
+* text=auto eol=lf
+
+# Explicitly declare binary types
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.ico binary
+*.pdf binary
+*.jar binary
+*.zip binary
+*.tar.gz binary

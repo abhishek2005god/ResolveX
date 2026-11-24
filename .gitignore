@@ -1,0 +1,69 @@
+# =============================================================
+# ResolveX – Root .gitignore
+# =============================================================
+
+# ── Secrets & Credentials ─────────────────────────────────────
+.env
+.env.local
+.env.*.local
+*.env
+# Keep .env.example (safe placeholder template)
+!.env.example
+
+# ── Java / Maven (Backend) ────────────────────────────────────
+backend/target/
+backend/.mvn/wrapper/maven-wrapper.jar
+backend/**/*.class
+backend/**/*.jar
+backend/**/*.war
+backend/uploads/
+backend/uploads-local/
+*.iml
+
+# ── Node / npm (Frontend) ─────────────────────────────────────
+frontend/node_modules/
+frontend/dist/
+frontend/dist-ssr/
+frontend/.vite/
+frontend/coverage/
+
+# Root-level artefacts (if any stray build output exists here)
+target/
+dist/
+node_modules/
+
+# ── IDE & Editor ──────────────────────────────────────────────
+.idea/
+.idea/**
+*.iml
+.vscode/settings.json
+.vscode/launch.json
+.vscode/tasks.json
+# Keep .vscode/extensions.json (safe – only recommends extensions)
+!.vscode/extensions.json
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+*.swp
+
+# ── OS artefacts ──────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ── Logs ──────────────────────────────────────────────────────
+*.log
+logs/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# ── Docker local overrides ────────────────────────────────────
+docker-compose.override.yml
+
+# ── Uploaded files (runtime data, not source) ─────────────────
+uploads/
+uploads-local/
